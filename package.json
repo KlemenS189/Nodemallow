@@ -1,5 +1,5 @@
 {
-  "name": "Nodemallow",
+  "name": "nodemallow",
   "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -7,7 +7,21 @@
   "author": "Klemen Strajhar",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "compile": "tsc",
+    "compile:watch": "tsc --watch",
+    "lint": "tslint -p",
+    "test": "jest"
+  },
   "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.11.1",
+    "jest": "^25.3.0",
+    "ts-jest": "^25.3.1",
+    "tslint": "^6.1.1",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "validate.js": "^0.13.1"
   }
 }
